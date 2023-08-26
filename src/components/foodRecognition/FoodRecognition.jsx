@@ -11,12 +11,16 @@ const FoodRecognition = ({ imageUrl, concepts }) => {
       <StyledFoodRecognition>
         <Image src={imageUrl} />
         <div>
-          <ol>
-            {concepts.map(
+          <ul>
+            {concepts.slice(0, 10).map(
               (concept) =>
-                concept.value > 0.02 && <p key={concept.id}>{concept.name}</p>
+                concept.value > 0.01 && (
+                  <p key={concept.id}>
+                    {concept.name} - {(concept.value * 100).toFixed(0)} %
+                  </p>
+                )
             )}
-          </ol>
+          </ul>
         </div>
       </StyledFoodRecognition>
     </div>

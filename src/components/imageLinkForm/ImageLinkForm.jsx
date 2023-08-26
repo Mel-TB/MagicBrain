@@ -26,7 +26,7 @@ const ImageLinkForm = () => {
   return (
     <>
       <StyledImageLinkForm>
-        <p>This magic brain will detect faces in your picture. </p>
+        <p>This magic brain will detect food in your picture. </p>
 
         <StyledFormRow>
           <Input
