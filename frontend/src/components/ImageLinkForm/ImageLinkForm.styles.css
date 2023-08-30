@@ -1,0 +1,25 @@
+.form {
+  width: 50%;
+  border-radius: 3px;
+}
+
+input {
+  border-radius: 15px;
+}
+
+button {
+  border-radius: 15px;
+  background-color: #102c57;
+  width: 30%;
+  padding: 0.7rem;
+  color: #fdfcfb;
+}
+
+@media (max-width: 767px) {
+  button {
+    width: auto;
+  }
+  .form {
+    width: auto;
+  }
+}
