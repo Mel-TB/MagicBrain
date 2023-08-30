@@ -24,7 +24,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send(database.users);
+  res.send("it is working");
 });
 app.post("/signin", signin.handleSignin(db, bcrypt));
 
@@ -34,6 +34,9 @@ app.get("/profile/:id", profile.handleProfile(db));
 
 app.put("/image", image.handleImage(db));
 
-app.listen(3000, () => {
-  console.log("app is running on port 3000");
+const PORT = process.env.PORT;
+app.listen(PORT || 3000, () => {
+  console.log(`app is running on port ${PORT}`);
 });
+
+console.log(PORT);
