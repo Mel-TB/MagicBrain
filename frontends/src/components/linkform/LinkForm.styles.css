@@ -1,0 +1,17 @@
+.form {
+  width: 50%;
+  border-radius: 3px;
+}
+
+input {
+  border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+  button {
+    width: auto;
+  }
+  .form {
+    width: auto;
+  }
+}
