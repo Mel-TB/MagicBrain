@@ -3,14 +3,18 @@
   border-radius: 3px;
 }
 
-input {
-  border-radius: 15px;
+.input:hover {
+  background-color: white;
+  color: #4f4557;
+  font-weight: semibold;
+  font-style: italic;
 }
 
 @media (max-width: 767px) {
   button {
     width: auto;
   }
+
   .form {
     width: auto;
   }

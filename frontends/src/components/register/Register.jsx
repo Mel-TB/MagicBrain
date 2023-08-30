@@ -29,7 +29,7 @@ const Register = ({ onRouteChange, loadUser }) => {
                 Name
               </label>
               <input
-                className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'
+                className='pa2 input-reset ba bg-transparent  w-100'
                 type='text'
                 name='name'
                 id='name'
@@ -45,7 +45,7 @@ const Register = ({ onRouteChange, loadUser }) => {
                 Email
               </label>
               <input
-                className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'
+                className='pa2 input-reset ba bg-transparent  w-100'
                 type='email'
                 name='email-address'
                 id='email-address'
@@ -61,7 +61,7 @@ const Register = ({ onRouteChange, loadUser }) => {
                 Password
               </label>
               <input
-                className='b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'
+                className='b pa2 input-reset ba bg-transparent  w-100'
                 type='password'
                 name='password'
                 id='password'
@@ -73,7 +73,7 @@ const Register = ({ onRouteChange, loadUser }) => {
           <div className=''>
             <input
               onClick={onSubmitSignIn}
-              className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib'
+              className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib register'
               type='submit'
               value='Register'
             />

@@ -14,12 +14,8 @@ import "./styles/App.css";
 
 const App = () => {
   const {
-    input,
-    setInput,
     imageUrl,
-    setImageUrl,
     concepts,
-    setConcepts,
     route,
     isLogin,
     user,
