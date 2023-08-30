@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import ParticlesBg from "particles-bg";
-import FoodRecognition from "./components/FoodRecognition/FoodRecognition";
-import Navigation from "./components/Navigation/Navigation";
+
+import Intro from "./components/Intro/Intro";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
+import Navigation from "./components/Navigation/Navigation";
 import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
-import Intro from "./components/Intro/Intro";
+import FoodRecognition from "./components/FoodRecognition/FoodRecognition";
+
 import { useAppState } from "./hooks/useAppState";
 
 import "./App.css";
