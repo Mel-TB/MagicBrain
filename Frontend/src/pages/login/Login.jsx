@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import LoginForm from "../../features/authentication/loginForm";
+import LoginForm from "../../features/authentication/LoginForm";
 
 const Login = ({ loadUser, onRouteChange }) => {
   return (
