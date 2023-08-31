@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import Form from "../../ui/form/Form";
 
 import { Input } from "../../ui/input/Input.styles";
@@ -7,7 +9,7 @@ import { Heading } from "../../ui/heading/Heading.styles";
 import { MiniSpinner } from "../../ui/spinner/MiniSpinner";
 import { useSignUp } from "./hooks/useSignup";
 
-const SignupForm = () => {
+const SignupForm = ({ onRouteChange, loadUser }) => {
   const {
     name,
     email,
@@ -17,7 +19,7 @@ const SignupForm = () => {
     onPasswordChange,
     onSubmitSignIn,
     isLoading,
-  } = useSignUp();
+  } = useSignUp(onRouteChange, loadUser);
 
   return (
     <FormBox>
@@ -42,7 +44,7 @@ const SignupForm = () => {
         <Input
           type='email'
           id='email'
-          autoComplete='email'
+          autoComplete='username'
           value={email}
           onChange={onEmailChange}
         />
@@ -72,6 +74,11 @@ const SignupForm = () => {
       </Form>
     </FormBox>
   );
+};
+
+SignupForm.propTypes = {
+  onRouteChange: PropTypes.func,
+  loadUser: PropTypes.func,
 };
 
 export default SignupForm;

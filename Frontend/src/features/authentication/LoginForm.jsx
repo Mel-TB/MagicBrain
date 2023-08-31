@@ -10,7 +10,7 @@ import { Heading } from "../../ui/heading/Heading.styles";
 
 import { useLogin } from "./hooks/useLogin";
 
-const LoginForm = ({ onRouteChange }) => {
+const LoginForm = ({ onRouteChange, loadUser }) => {
   const {
     signInEmail,
     signInPassword,
@@ -18,7 +18,7 @@ const LoginForm = ({ onRouteChange }) => {
     onPasswordChange,
     onSubmitSignIn,
     isLoading,
-  } = useLogin(onRouteChange);
+  } = useLogin(onRouteChange, loadUser);
 
   if (isLoading) {
     return <Spinner />;
@@ -34,6 +34,7 @@ const LoginForm = ({ onRouteChange }) => {
         <Input
           type='email'
           id='email'
+          autoComplete='username'
           value={signInEmail}
           onChange={onEmailChange}
         />
@@ -75,5 +76,6 @@ const LoginForm = ({ onRouteChange }) => {
 
 LoginForm.propTypes = {
   onRouteChange: PropTypes.func,
+  loadUser: PropTypes.func,
 };
 export default LoginForm;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const useSignUp = (onRouteChange, loadUser) => {
+export const useSignUp = ({ onRouteChange, loadUser }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
