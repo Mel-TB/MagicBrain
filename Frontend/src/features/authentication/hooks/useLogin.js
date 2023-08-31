@@ -25,12 +25,11 @@ export const useLogin = (onRouteChange, loadUser) => {
     })
       .then((response) => response.json())
       .then((user) => {
-        setIsLoading(false);
-
         if (user.id) {
           loadUser(user);
           onRouteChange("home");
         }
+        setIsLoading(false);
       });
   };
 
