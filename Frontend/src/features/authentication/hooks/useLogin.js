@@ -3,7 +3,6 @@ import React, { useState } from "react";
 export const useLogin = ({ onRouteChange, loadUser }) => {
   const [signInEmail, setSignInEmail] = useState("");
   const [signInPassword, setSignInPassword] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
 
   const onEmailChange = (event) => {
     setSignInEmail(event.target.value);
@@ -15,7 +14,7 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
 
   const onSubmitSignIn = (e) => {
     e.preventDefault();
-    setIsLoading(true);
+
     fetch("https://backend-2f5n.onrender.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
@@ -30,7 +29,6 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
           loadUser(user);
           onRouteChange("home");
         }
-        setIsLoading(false);
       });
   };
 
@@ -40,6 +38,5 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
     onEmailChange,
     onPasswordChange,
     onSubmitSignIn,
-    isLoading,
   };
 };
