@@ -19,7 +19,7 @@ const SignupForm = ({ onRouteChange, loadUser }) => {
     onPasswordChange,
     onSubmitSignIn,
     isLoading,
-  } = useSignUp(onRouteChange, loadUser);
+  } = useSignUp({ onRouteChange, loadUser });
 
   return (
     <FormBox onSubmit={onSubmitSignIn}>

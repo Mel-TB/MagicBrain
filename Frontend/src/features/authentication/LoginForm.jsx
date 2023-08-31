@@ -17,8 +17,12 @@ const LoginForm = ({ onRouteChange, loadUser }) => {
     onEmailChange,
     onPasswordChange,
     onSubmitSignIn,
-  } = useLogin(onRouteChange, loadUser);
+    isLoading,
+  } = useLogin({ onRouteChange, loadUser });
 
+  if (isLoading) {
+    return <Spinner />;
+  }
   return (
     <FormBox onSubmit={onSubmitSignIn}>
       <Heading as='h1'>Login</Heading>
@@ -49,10 +53,17 @@ const LoginForm = ({ onRouteChange, loadUser }) => {
       </Form>
 
       <Form orientation='vertical'>
-        <Button type='submit'> Login</Button>
+        <Button
+          type='submit'
+          disabled={isLoading}
+        >
+          {" "}
+          Login
+        </Button>
         <Heading
           as='h4'
           onClick={() => onRouteChange("register")}
+          disabled={isLoading}
         >
           Sign up
         </Heading>

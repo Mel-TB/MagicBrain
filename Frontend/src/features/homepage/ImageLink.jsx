@@ -38,4 +38,5 @@ ImageLink.propTypes = {
   onButtonSubmit: PropTypes.func,
   name: PropTypes.string,
 };
+
 export default ImageLink;

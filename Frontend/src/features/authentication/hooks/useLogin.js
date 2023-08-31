@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const useLogin = ({ onRouteChange, loadUser }) => {
   const [signInEmail, setSignInEmail] = useState("");
   const [signInPassword, setSignInPassword] = useState("");
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const onEmailChange = (event) => {
     setSignInEmail(event.target.value);
@@ -14,7 +16,7 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
 
   const onSubmitSignIn = (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     fetch("https://backend-2f5n.onrender.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
@@ -26,10 +28,13 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
       .then((response) => response.json())
       .then((user) => {
         if (user.id) {
+          console.log(user);
           loadUser(user);
           onRouteChange("home");
         }
-      });
+        setIsLoading(false);
+      })
+      .catch((error) => console.log(error.message));
   };
 
   return {
@@ -38,5 +43,6 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
     onEmailChange,
     onPasswordChange,
     onSubmitSignIn,
+    isLoading,
   };
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const useSignUp = ({ onRouteChange, loadUser }) => {
   const [name, setName] = useState("");
@@ -35,6 +35,7 @@ export const useSignUp = ({ onRouteChange, loadUser }) => {
         if (user.id) {
           loadUser(user);
           onRouteChange("home");
+          console.log(user);
         }
         setIsLoading(false);
       });

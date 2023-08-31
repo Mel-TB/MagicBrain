@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: "Open Sans", sans-serif;
-    color: var(--color-silver-700);
+    color: var(--color-grey-900);
 
   background: linear-gradient(115deg, var(--color-beige-0), var(--color-silver-100));
 

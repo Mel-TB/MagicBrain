@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 
-import LinkForm from "../../features/homepage/ImageLink";
+import ImageLink from "../../features/homepage/ImageLink";
 import FoodRecognition from "../../features/homepage/FoodRecognition";
 
 const Home = ({ onInputChange, onButtonSubmit, imageUrl, concepts, name }) => {
   return (
     <>
-      <LinkForm
+      <ImageLink
         onInputChange={onInputChange}
         onButtonSubmit={onButtonSubmit}
         name={name}
