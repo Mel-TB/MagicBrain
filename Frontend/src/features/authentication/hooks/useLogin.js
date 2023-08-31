@@ -31,11 +31,6 @@ export const useLogin = (onRouteChange, loadUser) => {
           loadUser(user);
           onRouteChange("home");
         }
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        alert("Error while loading user. Please try again");
-        console.log(error);
       });
   };
 

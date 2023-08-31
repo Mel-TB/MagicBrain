@@ -36,11 +36,6 @@ export const useSignUp = (onRouteChange, loadUser) => {
           loadUser(user);
           onRouteChange("home");
         }
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        alert("Error while signup. Please try again");
-        console.log(error);
       });
   };
 
