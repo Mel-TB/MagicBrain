@@ -25,7 +25,7 @@ const LoginForm = ({ onRouteChange, loadUser }) => {
   }
 
   return (
-    <FormBox>
+    <FormBox onSubmit={onSubmitSignIn}>
       <Heading as='h1'>Login</Heading>
       <Form
         label='Email'
@@ -55,7 +55,6 @@ const LoginForm = ({ onRouteChange, loadUser }) => {
 
       <Form orientation='vertical'>
         <Button
-          onClick={onSubmitSignIn}
           type='submit'
           disable={isLoading}
         >

@@ -18,7 +18,8 @@ export const useSignUp = ({ onRouteChange, loadUser }) => {
     setPassword(event.target.value);
   };
 
-  const onSubmitSignIn = () => {
+  const onSubmitSignIn = (e) => {
+    e.preventDefault();
     setIsLoading(true);
     fetch("https://backend-2f5n.onrender.com/register", {
       method: "post",

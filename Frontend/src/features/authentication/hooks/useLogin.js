@@ -13,7 +13,8 @@ export const useLogin = ({ onRouteChange, loadUser }) => {
     setSignInPassword(event.target.value);
   };
 
-  const onSubmitSignIn = () => {
+  const onSubmitSignIn = (e) => {
+    e.preventDefault();
     setIsLoading(true);
     fetch("https://backend-2f5n.onrender.com/signin", {
       method: "post",

@@ -22,7 +22,7 @@ const SignupForm = ({ onRouteChange, loadUser }) => {
   } = useSignUp(onRouteChange, loadUser);
 
   return (
-    <FormBox>
+    <FormBox onSubmit={onSubmitSignIn}>
       <Heading as='h1'>Signup</Heading>
       <Form
         label='Name'
@@ -65,7 +65,7 @@ const SignupForm = ({ onRouteChange, loadUser }) => {
 
       <Form orientation='vertical'>
         <Button
-          onClick={onSubmitSignIn}
+          type='submit'
           disabled={isLoading}
         >
           {" "}
