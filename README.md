@@ -34,7 +34,7 @@
 
 ## About The Project
 
-[![Homepage.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXRjeGVzdWt3aXpmeWN4ZjJwbGg5NHltZm15cGszYXFsZTJzZWJ4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UIY8MGR97TEBrdlL3u/giphy.gif)](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXRjeGVzdWt3aXpmeWN4ZjJwbGg5NHltZm15cGszYXFsZTJzZWJ4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UIY8MGR97TEBrdlL3u/giphy.gif)
+[![Homepage.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXRjeGVzdWt3aXpmeWN4ZjJwbGg5NHltZm15cGszYXFsZTJzZWJ4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UIY8MGR97TEBrdlL3u/giphy.gif)]
 
 This is a web application that utilizes the Magic Brain with Food Recognition API to identify and recognize different types of food from images. It uses the Clarifai API as the underlying technology for food recognition.
  
