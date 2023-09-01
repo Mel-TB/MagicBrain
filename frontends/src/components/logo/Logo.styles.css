@@ -1,9 +1,0 @@
-.Tilt {
-  background: linear-gradient(115deg, #fdfcfb, #e2d1c3);
-}
-
-@media (max-width: 767px) {
-  .Tilt {
-    height: 20px;
-  }
-}
