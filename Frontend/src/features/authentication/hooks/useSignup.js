@@ -21,7 +21,7 @@ export const useSignUp = ({ onRouteChange, loadUser }) => {
   const onSubmitSignIn = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    fetch("http://localhost:3000/signin", {
+    fetch("https://backend-2f5n.onrender.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
