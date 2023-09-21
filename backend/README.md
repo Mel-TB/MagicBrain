@@ -36,13 +36,14 @@ This is the backend API for the Magic Brain. It provides endpoints for user regi
 
 ### Built With
 
-This frontend website was created with
+This backend website was created with
 
 - ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 - ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 - ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 - ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 - ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+- ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 ## Getting Started
 
@@ -59,21 +60,12 @@ cd MagicBrain
 npm install
 ```
 
-- Create a .env file in root directory add and update valyes with your database credentials:
-
-```sh
-DATABASE_URL=your-database-url
-DATABASE_HOST=your-database-host
-DATABASE_USER=your-database-user
-DATABASE_PW=your-database-password
-DATABASE_DB=your-database-name
-PORT=your-port-number
-```
+- Set up your docker env
 
 - Run the application:
 
 ```sh
-npm start or nodemon start
+docker compose up --build
 ```
 
 ## API Endpoints
@@ -88,8 +80,8 @@ npm start or nodemon start
 - Description: Handles user authentication /login by checking the provided credentials against the database.
 - Request Body:
   {
-  - `email`: `user@example.com`
-  - `password`: `password`.
+  - `email`: `user@gmail.com`
+  - `password`: `a`.
     }
 - Response:
   - `200 OK`: User object with profile information

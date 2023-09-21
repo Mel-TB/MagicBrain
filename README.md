@@ -1,4 +1,4 @@
-# Magic Brain 
+# Magic Brain
 
 <div align='center'>
 
@@ -37,10 +37,11 @@
 [![Homepage.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXRjeGVzdWt3aXpmeWN4ZjJwbGg5NHltZm15cGszYXFsZTJzZWJ4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UIY8MGR97TEBrdlL3u/giphy.gif)]
 
 This is a web application that utilizes the Magic Brain with Food Recognition API to identify and recognize different types of food from images. It uses the Clarifai API as the underlying technology for food recognition.
- 
+
 ### Features
+
 - Upload images containing food to get information about recognized food items.
-- Display the name of ingredients 
+- Display the name of ingredients
 - Store user information in a backend database.
 
 ### Built With
@@ -54,6 +55,7 @@ This website was created with
 - ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 - ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 - ![Styled Components](https://img.shields.io/badge/styled--components-bf4f74?style=for-the-badge&logo=styled-components&logoColor=white)
+- ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 ## Getting Started
 
@@ -73,12 +75,10 @@ yarn run dev
 
 ## Contact
 
-Trami Melinda 
+Trami Melinda
 
-  <a href='https://twitter.com/mel_trbd'>![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)</a> 
+<a href='https://twitter.com/mel_trbd'>![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)</a>
 
- <a href='mailto:tramimelinda@gmail.com'>![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>  
+<a href='mailto:tramimelinda@gmail.com'>![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)</a>
 
- <a href='https://fr.linkedin.com/in/melindat'>![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
- 
-   
+<a href='https://fr.linkedin.com/in/melindat'>![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
